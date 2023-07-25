@@ -1,0 +1,38 @@
+﻿section {
+    margin-top: 50px;
+}
+
+.community a {
+    text-decoration: none;
+    color: black;
+}
+
+.post-area {
+    padding: 20px;
+}
+
+    .post-area button {
+        margin-top: 5px;
+    }
+
+ul {
+    list-style-type: none;
+}
+
+#post-giver {
+    color: blue;
+}
+
+.posts {
+    min-width: 650px;
+    max-width: 650px;
+    padding: 10px 20px;
+}
+
+.post-body {
+    margin-top: 10px;
+}
+
+.post-section p {
+    text-align: justify;
+}

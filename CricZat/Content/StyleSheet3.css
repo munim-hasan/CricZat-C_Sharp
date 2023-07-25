@@ -1,0 +1,136 @@
+﻿#header-section {
+    margin-top: 80px;
+}
+
+.nav-image {
+    background-color: dimgray;
+}
+
+    .nav-image img {
+        width: 10%;
+    }
+
+    .nav-image i {
+        color: white;
+        font-size: 20px;
+    }
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(173, 173, 173, 0.3);
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+#btn {
+    margin: auto 70px;
+    margin-top: 40px;
+    font-size: 25px;
+}
+
+.input-group-login {
+    top: 150px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 5px 0;
+    margin: 5px 0;
+    border-left: 0;
+    font-size: 18px;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid rgb(75, 75, 75);
+    outline: none;
+    background: transparent;
+}
+
+.submit-btn {
+    width: 80%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin-top: 50px;
+    background: dimgray;
+    border: 0;
+    color: white;
+    font-size: 17px;
+    outline: none;
+    border-radius: 30px;
+}
+
+span {
+    color: black;
+    font-size: 15px;
+    margin-top: 28px;
+    position: absolute;
+}
+
+#login {
+    left: 50px;
+}
+
+#login-btn {
+    color: white;
+}
+
+#login input {
+    color: black;
+    font-size: 25;
+}
+
+
+.login-page .submit-btn {
+    top: 350px;
+}
+
+.container .editorial {
+    margin-top: 30px;
+}
+
+.editorial {
+    margin-top: 30px;
+    padding: 20px 20px;
+    background-color: ghostwhite;
+    border: 1px solid gray;
+    box-shadow: 10px 10px 10px solid;
+}
+
+.edit-post textarea {
+    resize: none;
+}
+
+.choose-btn {
+    margin-bottom: 7px;
+}
+
+.select-section {
+    margin-top: 50px;
+}
+
+    .select-section select {
+        padding: 5px 20px;
+    }
+
+    .select-section input {
+        color: black;
+    }
+
+.table {
+    margin-top: 30px;
+}
+
+.select-section .table-section-2 {
+    display: none;
+}
+
+.select-section .table-section-3 {
+    display: none;
+}

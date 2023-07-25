@@ -1,0 +1,133 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <title>Ranking</title>
+    <link rel="stylesheet" href="style1.css">
+    
+
+    <body>
+
+        <div class="container">
+            <div class="select-team">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio1">Men</label>
+
+                    <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio2">Women</label>
+                </div>
+            </div><br>
+            <div class="select-category">
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                    <input type="radio" class="btn-check" name="btnradio-n" id="btnradio3" autocomplete="off" checked>
+                    <label class="btn btn-outline-primary" for="btnradio3">Bowler</label>
+
+                    <input type="radio" class="btn-check" name="btnradio-n" id="btnradio4" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio4">Batsman</label>
+
+                    <input type="radio" class="btn-check" name="btnradio-n" id="btnradio5" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio5">All-Rounder</label>
+
+                    <input type="radio" class="btn-check" name="btnradio-n" id="btnradio6" autocomplete="off">
+                    <label class="btn btn-outline-primary" for="btnradio6">Teams</label>
+                </div>
+            </div>
+            <div class="odi-ranking shadow-lg p-3 mb-5 bg-body rounded">
+                <h3>For ODI</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Team Name</th>
+                            <th scope="col">Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>India</td>
+                            <td>925</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Pakistan</td>
+                            <td>920</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Australia</td>
+                            <td>905</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="test-ranking shadow-lg p-3 mb-5 bg-body rounded">
+                <h3>For Test</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Team Name</th>
+                            <th scope="col">Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>India</td>
+                            <td>925</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Pakistan</td>
+                            <td>920</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Australia</td>
+                            <td>905</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="t20-ranking shadow-lg p-3 mb-5 bg-body rounded">
+                <h3>For T20</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Position</th>
+                            <th scope="col">Team Name</th>
+                            <th scope="col">Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>India</td>
+                            <td>925</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Pakistan</td>
+                            <td>920</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Australia</td>
+                            <td>905</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    </body>

@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - CricZat</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("CricZat", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul style="display:inline-block" class="nav navbar-nav">
+                    @if ((Session["adminUsername"] == null && Session["Password"] == null) && (Session["Username"] == null && Session["userPassword"] == null))
+                    {
+
+                        <li>@Html.ActionLink("Index", "Index", "Home")</li>
+                        <li>@Html.ActionLink("AdminLogin", "AdminLogin", "Home")</li>
+
+                        <li>@Html.ActionLink("LoginPage", "LoginPage", "Home")</li>
+                        <li>@Html.ActionLink("Rankings", "Rankings", "Home")</li>
+                        <li>@Html.ActionLink("Records", "Records", "Home")</li>
+
+                    }
+                    else if ((Session["adminUsername"] != null && Session["Password"] != null) && (Session["Username"] == null && Session["userPassword"] == null))
+                    {
+                        <li>@Html.ActionLink("Index", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Editorial", "Editorial", "Home")</li>
+                        <li>@Html.ActionLink("Log out", "Logout", "Home")</li>
+                        <li>@Html.ActionLink("Rankings", "Rankings", "Home")</li>
+                        <li>@Html.ActionLink("Records", "Records", "Home")</li>
+                        <li>@Html.ActionLink("Edit ", "editInfo", "Home")</li>
+                        <li>@Html.ActionLink("Community", "Community", "Home")</li>
+                    }
+                    else
+                    {
+                        <li>@Html.ActionLink("Index", "Index", "Home")</li>
+                        
+                        <li>@Html.ActionLink("Log out", "Logout", "Home")</li>
+                        <li>@Html.ActionLink("Rankings", "Rankings", "Home")</li>
+                        <li>@Html.ActionLink("Records", "Records", "Home")</li>
+                        <li>@Html.ActionLink("Edit ", "editInfo", "Home")</li>
+                        <li>@Html.ActionLink("Community", "Community", "Home")</li>
+
+                    }
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

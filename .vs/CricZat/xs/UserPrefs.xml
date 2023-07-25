@@ -1,0 +1,37 @@
+﻿<Properties StartupConfiguration="{5F25C6EB-E91C-44C5-9918-253B06D37999}|">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="CricZat/Views/Home/LoginPage.cshtml">
+    <Files>
+      <File FileName="CricZat/Views/Home/Index.cshtml" Line="19" Column="34" />
+      <File FileName="CricZat/Views/Home/CreateUser.cshtml" Line="1" Column="1" />
+      <File FileName="CricZat/Views/Home/LoginPage.cshtml" Line="57" Column="42" />
+      <File FileName="CricZat/Views/_ViewStart.cshtml" Line="4" Column="1" />
+      <File FileName="CricZat/Models/Model1.edmx" Line="23" Column="32" />
+      <File FileName="CricZat/Properties/AssemblyInfo.cs" Line="1" Column="1" />
+      <File FileName="CricZat/Web.config" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CricZat" expanded="True">
+            <Node name="CricZat" expanded="True">
+              <Node name="Models" expanded="True" />
+              <Node name="Properties" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="LoginPage.cshtml" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.CricZat PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>

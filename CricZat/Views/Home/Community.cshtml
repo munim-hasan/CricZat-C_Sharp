@@ -1,0 +1,97 @@
+﻿ 
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<link rel="stylesheet" href="~/Content/home.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.bundle.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+<section class="section about-section gray-bg" id="about">
+    <div class="container">
+        <div class="row align-items-center flex-row">
+            <div class="col-lg-3">
+                <div class="about-avatar">
+                    <img class="w-75 border p-2" src="https://bootdey.com/img/Content/avatar/avatar7.png" title="" alt="">
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="about-text go-to">
+                    <h3 class="dark-color">User Name</h3>
+                    <p>Description</p>
+                    <button type="button" class="btn btn-outline-info">Edit Info</button>
+                </div>
+            </div>
+
+        </div><br>
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="community col-lg-3 border-end">
+                    <h5>Your Community</h5>
+                    <a href="">Community 1</a><br>
+                    <a href="">Community 1</a><br>
+                    <a href="">Community 1</a>
+
+                </div>
+                <div class="col-lg-9">
+                    <div class="row">
+                        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <label class="btn btn-outline-secondary" for="btnradio1">My Posts</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample1" aria-expanded="false" aria-controls="multiCollapseExample1">
+                            <label class="btn btn-outline-secondary" for="btnradio2">Community Posts</label>
+
+                            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">
+                            <label class="btn btn-outline-secondary" for="btnradio3">Post Now</label>
+                        </div>
+                    </div>
+                    <div class="post-area collapse multi-collapse" id="multiCollapseExample2">
+                        <form action="/Home/CommunityHandle" method="post">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" id="comment" name="text" placeholder="Write down your thoughts"></textarea>
+                                <button class="btn btn-outline-primary" id="btnid">Post Now</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="show-posts collapse multi-collapse" id="multiCollapseExample1">
+
+                        @foreach (var item in ViewBag.post)
+                        {
+                            <ul class="posts">
+                                <li>
+                                    <div class="post-body  border-bottom">
+                                        <div>
+
+                                            @foreach (var user in ViewBag.users) { 
+                                                if(user.userId == item.userId) { 
+                                                    <p>@user.firstName @user.lastName</p>
+                                                }
+                                            }
+
+                                            <div class="posts-section">
+                                                <p>@item.text</p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </li>
+
+                            </ul>
+                        }
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

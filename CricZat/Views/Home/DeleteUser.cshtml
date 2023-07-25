@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "DeleteUser";
+    Layout = null;
+}
+
+<h2>DeleteUser</h2>
+
+<form action="/Home/DeleteUser" method="post">
+    <div class="form-group">
+        <label for="">Enter ID</label>
+        <input type="text" class="form-control" id="txtdelete" placeholder="ID" name="userId">
+    </div>
+    <button class="btn btn-success">Submit</button>
+</form>
+
+<table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th>User ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in ViewBag.users)
+        {
+            <tr>
+                <td>@user.userId</td>
+                <td>@user.userName</td>
+                <td>@user.userEmail</td>
+                <td>@user.userPassword</td>
+            </tr>
+        }
+
+
+    </tbody>
+</table>
